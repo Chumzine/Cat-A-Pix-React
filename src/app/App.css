@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600;1,800&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+section .wrapper {
+  background-color: #F9F6EE;
+} 
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #36454F;
+}
+
+header .logo {
+  height: 5%;
+  width: 5%;
+  margin-right: auto;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 50px;
+  color: #FFFFFF;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px auto;
+  max-width: 60%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: #1B1212;
+}
+
+label {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #1B1212;
+}
+
+.choice label {
+  margin-right: 31px;
+}
+
+.name-input label {
+  margin-right: 43px;
+}
+
+.select label {
+  margin-right: 10px;
+}
+
+.form-container input, select {
+  border-radius: 5px;
+}
+
+.choice input {
+  padding: 5px 5px;
+}
+
+.name-input input {
+  max-width: 200px;
+  max-height: 20px;
+  padding: 11px 11px;
+}
+
+select {
+  padding: 5px 5px;
+}
+
+.button, .clear-button {
+  background-color: #353935;
+  color: #FFFFFF;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+.button:hover, .clear-button:hover {
+  opacity: 0.5;
+}
+
+ul li {
+  list-style: none;
+  border: 1px solid #36454F;
+  padding: 8px;
+  width: 250px;
+  margin-bottom: 1rem;
+}
+
+ul li img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+ul li span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 14px;
+  color: #1B1212;
+  margin-left: 5px;
+}
+
+.display-gallery {
+  margin: 10% 10%;
+}
+
+.edit-button, .delete-button {
+  background-color: #353935;
+  color: #FFFFFF;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.edit-button {
+  margin-right: 0.5rem;
+}
+
+
+/* For mobile devices */
+@media screen and (max-width: 600px) {
+  header {
+    padding: 10px 2%;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .form-container {
+    margin: 10px 5%;
+    padding: 10px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  input, select {
+    width: 100%; 
+  }
+
+  .button, .clear-button {
+    padding: 10px;
+    width: 100%; 
+    text-align: center;
+  }
+
+  ul li {
+    padding: 5px;
+    width: 180px;
+  }
+
+  ul li span {
+    font-size: 12px;
+  }
+
+  .edit-button, .delete-button {
+    padding: 5px;
+  }
+}
